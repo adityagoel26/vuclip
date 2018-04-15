@@ -1,6 +1,7 @@
 language: java
 sudo: false
+gradle assemble
+gradle check
+./gradlew check
 jdk:
   - openjdk7
-./gradlew assemble
-./gradlew check
