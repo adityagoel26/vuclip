@@ -1,5 +1,5 @@
 language: java
-gradle assemble
+install: true
 gradle check
 ./gradlew check
 jdk:
