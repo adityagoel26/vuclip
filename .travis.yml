@@ -1,6 +1,6 @@
 language: java
-sudo: false
 gradle assemble
+./gradlew assemble
 gradle check
 ./gradlew check
 jdk:
