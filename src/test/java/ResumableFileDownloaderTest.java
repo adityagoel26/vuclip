@@ -1,5 +1,3 @@
-package com.gameoflife;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ResumableFileDownloaderTest {
-	ResumableFileDownloader resumableFileDownloader = new ResumableFileDownloader();
+	//ResumableFileDownloader resumableFileDownloader = new ResumableFileDownloader();
     String url = "";
     HttpURLConnection httpCon;
     

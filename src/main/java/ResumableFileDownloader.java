@@ -1,5 +1,3 @@
-package com.gameoflife;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -50,10 +48,11 @@ public class ResumableFileDownloader {
 		File file = new File(saveFilePath);
 		FileOutputStream outputStream;
 		
-		if(file.exists())
-			outputStream = new FileOutputStream(file,true); //makes the stream append if the file exists
-        else
-        	outputStream = new FileOutputStream(file); //creates a new file.
+		if(file.exists()) {
+			outputStream = new FileOutputStream(file, true); //makes the stream append if the file exists
+		} else {
+			outputStream = new FileOutputStream(file); //creates a new file.
+		}
  
 		inputStream.skip(file.length());
 		
@@ -67,7 +66,7 @@ public class ResumableFileDownloader {
 		while(percentage <= 100) {
 		    String temp =generateStars(percentage);
 		    System.out.write(temp.getBytes());
-		    System.out.print("\b\b\b");
+		  //  System.out.print("\b\b\b");
 		    percentage = percentage+10;
 		    Thread.sleep(500);
 		}
