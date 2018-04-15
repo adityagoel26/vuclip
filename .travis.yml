@@ -2,5 +2,3 @@ language: java
 gradle assemble
 gradle check
 ./gradlew check
-jdk:
-  - openjdk7
