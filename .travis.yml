@@ -1,5 +1,5 @@
 language: java
-install: true
+mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 gradle check
 ./gradlew check
 jdk:
