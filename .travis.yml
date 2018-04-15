@@ -1,6 +1,5 @@
 language: java
 gradle assemble
-./gradlew assemble
 gradle check
 ./gradlew check
 jdk:
